@@ -1,0 +1,19 @@
+﻿  Atarihantei.cpp
+  Bonbe.cpp
+  Camera.cpp
+  Coin.cpp
+  Cube.cpp
+  Grit.cpp
+  input.cpp
+  Main.cpp
+  MeshField.cpp
+  Number.cpp
+c:\users\alfam\documents\制作作品アーカイブ\dx22三校合同コンテスト\ハリーフライ(プロジェクトver4.0)\harryfly\harryfly\number.cpp(23): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+  Polygon.cpp
+c:\users\alfam\documents\制作作品アーカイブ\dx22三校合同コンテスト\ハリーフライ(プロジェクトver4.0)\harryfly\harryfly\polygon.cpp(121): warning C4244: '初期化中': 'int' から 'float' への変換です。データが失われる可能性があります。
+c:\users\alfam\documents\制作作品アーカイブ\dx22三校合同コンテスト\ハリーフライ(プロジェクトver4.0)\harryfly\harryfly\polygon.cpp(122): warning C4244: '初期化中': 'int' から 'float' への変換です。データが失われる可能性があります。
+  Score.cpp
+  Sixyokika.cpp
+  Xmodel.cpp
+  コードを生成中...
+  HarryFly.vcxproj -> C:\Users\alfam\Documents\制作作品アーカイブ\DX22三校合同コンテスト\ハリーフライ(プロジェクトver4.0)\HarryFly\Debug\HarryFly.exe
