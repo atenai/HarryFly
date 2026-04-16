@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\alfam\\Documents\\HarryFly_Git\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C2823CE9-B952-43DE-8612-05122C5245B2}|HarryFly\\HarryFly.vcxproj|C:\\Users\\alfam\\Documents\\HarryFly_Git\\HarryFly\\MeshField.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C2823CE9-B952-43DE-8612-05122C5245B2}|HarryFly\\HarryFly.vcxproj|solutionrelative:HarryFly\\MeshField.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MeshField.cpp",
+              "DocumentMoniker": "C:\\Users\\alfam\\Documents\\HarryFly_Git\\HarryFly\\MeshField.cpp",
+              "RelativeDocumentMoniker": "HarryFly\\MeshField.cpp",
+              "ToolTip": "C:\\Users\\alfam\\Documents\\HarryFly_Git\\HarryFly\\MeshField.cpp",
+              "RelativeToolTip": "HarryFly\\MeshField.cpp",
+              "ViewState": "AgIAABMAAAAAAAAAAAD4vxsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-16T08:07:01.89Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

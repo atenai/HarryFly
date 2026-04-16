@@ -1,2 +1,2 @@
-#TargetFrameworkVersion=v4.0:PlatformToolSet=v141:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=10.0.17763.0
-Debug|Win32|C:\Users\alfam\Documents\制作作品アーカイブ\DX22三校合同コンテスト\ハリーフライ(プロジェクトver4.0)\HarryFly\|
+PlatformToolSet=v145:VCToolArchitecture=Native32Bit:VCToolsVersion=14.50.35717:VCServicingVersionCompilers=14.50.35729:TargetPlatformVersion=10.0.26100.0:
+Debug|Win32|C:\Users\alfam\Documents\HarryFly_Git\|

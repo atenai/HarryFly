@@ -25,7 +25,7 @@
 #define FVF_VERTEX_3D (D3DFVF_XYZ | D3DFVF_DIFFUSE|D3DFVF_TEX1|D3DFVF_NORMAL) //設定
 #define FVF_VERTEX_2D (D3DFVF_XYZRHW | D3DFVF_DIFFUSE|D3DFVF_TEX1) //設定
 
-typedef struct
+struct OBJECT
 {
 	D3DXMATRIX mtx_meshNull;	//入れ物
 	D3DXMATRIX mtx_meshWorld;	//ワールド
@@ -48,7 +48,7 @@ typedef struct
 	float fScaleY = 1;//拡大Y(等倍)
 	float fScaleZ = 1;//拡大Z(等倍)
 
-}OBJECT;
+};
 
 static OBJECT object[OBJECT_COUNT];
 static D3DXMATRIX g_mtx_meshWorld;
@@ -68,10 +68,10 @@ typedef struct
 //*****************************************************************************
 // グローバル変数
 //*****************************************************************************
-static float u0[MESH_H*MESH_W];
-static float v0[MESH_H*MESH_W];
-static float u1[MESH_H*MESH_W];
-static float v1[MESH_H*MESH_W];
+static float u0[MESH_H * MESH_W];
+static float v0[MESH_H * MESH_W];
+static float u1[MESH_H * MESH_W];
+static float v1[MESH_H * MESH_W];
 
 static VERTEX_3D V[VERTEX_COUNT];
 
@@ -97,7 +97,7 @@ void InitMesh(void)
 	float defY = 0;
 
 
-	for (int nCnt = 0; nCnt < MESH_H*MESH_W; nCnt++)
+	for (int nCnt = 0; nCnt < MESH_H * MESH_W; nCnt++)
 	{
 		u0[nCnt] = 0;
 		v0[nCnt] = 0;
@@ -141,18 +141,18 @@ void InitMesh(void)
 	{
 		if (!y == 0)
 		{
-			index[idx] = (MESH_W + 1)*(y + 1);
+			index[idx] = (MESH_W + 1) * (y + 1);
 			idx++;
 		}
 
 		for (int x = 0; x < MESH_W + 1; x++)
 		{
-			index[idx] = (MESH_W + 1 + x) + ((MESH_W + 1)*y);
+			index[idx] = (MESH_W + 1 + x) + ((MESH_W + 1) * y);
 			idx++;
-			index[idx] = x + ((MESH_W + 1)*y);
+			index[idx] = x + ((MESH_W + 1) * y);
 			idx++;
 		}
-		index[idx] = MESH_W + ((MESH_W + 1)*y);
+		index[idx] = MESH_W + ((MESH_W + 1) * y);
 		idx++;
 	}
 
@@ -187,7 +187,7 @@ void InitMesh(void)
 	memcpy(pV, V, sizeof(VERTEX_3D) * VERTEX_COUNT);//CPUにメモリを入れる(コピーする)
 	g_pVertexBuffer->Unlock();//メモリに書き込み終わり
 
-							  //インデックス読み取り
+	//インデックス読み取り
 	g_pIndexBuffer->Lock(0, 0, (void**)&LPindex, D3DLOCK_DISCARD);//メモリに書き込み始め
 	memcpy(LPindex, index, sizeof(WORD) * INDEX_COUNT);//CPUにメモリを入れる(コピーする)
 	g_pIndexBuffer->Unlock();//メモリに書き込み終わり
@@ -265,7 +265,7 @@ void DrawMesh(void)
 		pDevice->SetFVF(FVF_VERTEX_3D);
 		pDevice->SetRenderState(D3DRS_LIGHTING, false);//ライティングオフ
 
-													   //各種行列の設定
+		//各種行列の設定
 		pDevice->SetTransform(D3DTS_WORLD, &object[nCnt].mtx_meshWorld);		//セットしたい行列の先頭アドレス
 		pDevice->SetStreamSource(0, g_pVertexBuffer, 0, sizeof(VERTEX_3D));
 		pDevice->SetIndices(g_pIndexBuffer);
